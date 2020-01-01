@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="style/main.css")
+        script(src="JS/main.js")
+        title Upload
+    body
+
+        include navbar.pug
+
+        div(class="upload")
+           form(action="/upload" method='post' enctype="multipart/form-data")
+                input(type="file" name="song" class="ipt_up")
+                input(type="text" name="repos" class="ipt_up" value=`${repos}` id='file')    
+                input(type="submit", value="Upload" class="ipt_up")
+                
+                button(class="ipt_up" type='submit' disabled)
+                    a(href="index_?repos="+`${repos}&user=${user}&phone=${phone}`) Go to home

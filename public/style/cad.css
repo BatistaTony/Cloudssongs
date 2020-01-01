@@ -1,0 +1,32 @@
+* {
+    margin-top:0;
+    padding:0;
+}
+
+.form {
+    margin-top:25%;
+    width: 100%;
+}
+
+
+.form input  {
+    width: 240px;
+    height: 30px;
+    border-radius:10px;
+    border:hidden;
+    margin-top:10px;
+    margin-left:50px;
+}
+
+.btn_cad {
+    background:url('../img/fundo2.png');
+    color:white;
+}
+
+h5 {
+    float: left;
+    text-align: center;
+    font-size:12pt;
+    width: 100%;
+    margin-bottom:5%;
+}

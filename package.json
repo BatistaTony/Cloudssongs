@@ -1,0 +1,16 @@
+{
+  "name": "audio_player",
+  "version": "1.0.0",
+  "description": "audio player",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Batista",
+  "license": "ISC",
+  "dependencies": {
+    "multer": "^1.4.1",
+    "node-id3": "^0.1.7",
+    "pug": "^2.0.3"
+  }
+}

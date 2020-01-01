@@ -1,0 +1,296 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: Raleway Thin;
+}
+
+@font-face {
+    font-family: Raleway Thin;
+    src:url(fonts/raleway/Raleway-Regular.ttf)
+}
+
+body {
+    color:white;
+    background:#4e5558; 
+    background-size: 100% 100%;
+}
+
+h1 {
+    float: left;
+    text-align: left;
+    background-size: 100% 100%;
+    font-size:12pt;
+    top:0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    margin-left:10px;
+    margin-top:5px;
+}
+
+.navbar {
+    top:0;
+    position: fixed;
+    width: 100%;
+    height:50px;
+    background:url('../img/fundo1.png');
+}
+
+
+.menu {
+    float: right;
+    list-style: none;
+    display:flex;
+    margin-right:10px;
+}
+
+.menu .upload_ {
+    float: left;
+    margin-top:14px;
+    margin-right:10px;
+}
+
+.menu .upload_ img{
+    width: 23px;
+    height: 23px;
+}
+
+.menu .user {
+    width: 23px;
+    height:19px;
+    border-radius:100%;
+    border:1px solid white;
+    margin-top:14px;
+    font-size:11pt;
+    text-align: center;
+    background:white;
+    color:black;
+    font-weight: bold;
+    padding-top:2px;
+}
+
+
+.menu li {
+    font-size:10pt;
+}
+
+h4 {
+    font-size:12pt;
+    margin-top:-35px;
+    margin-left:10px;
+    position: fixed;
+}
+
+.songs {
+    list-style: none;
+    width: 100%;
+    margin-top:65px;
+    height: 430px;
+    overflow-y:auto;
+    overflow-x: hidden;
+}
+
+.songs li {
+    width: 100%;
+    height: 30px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-top:10px;
+    cursor:pointer;
+    
+}
+
+.songs li h3 {
+    margin-left:10px;
+    font-size:0.7rem;
+    float: left;
+}
+
+
+.songs li span {
+    float: left;
+    width: 100%;
+    color:white;
+    opacity: 0.5;
+    font-size:0.5rem;
+    margin-left:10px;
+}
+
+.songs li:hover {
+    background:rgba(0,0,0,.075);
+}
+
+.btn_song {
+    position: absolute;
+    float: right;
+    right:0;
+    background:transparent;
+    border:hidden;
+    
+    height: 20px;
+    margin-top:-30px;
+    z-index: 999;
+}
+
+.btn_song img {
+    width: 17px;
+    height: 17px;
+}
+
+.btn_song:hover .btn_delete {
+    display:block;
+}
+
+.btn_song a{
+    text-decoration: none;
+}
+
+.btn_delete {
+    display: none;
+    float: left;
+    position: absolute;
+    right: 80%;
+    font-size: 8pt;
+    padding-top:2px;
+    padding-bottom:3px;
+    width: 50px;
+    height: 10px;
+    background:white;
+    color:black;
+    border-radius:10px;
+    z-index: 999;
+    margin-top:-20px;
+}
+
+.player {
+    width: 100%;
+    height: 100px;
+    background: transparent;
+    background-size: 100% 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.player::after {
+    content: "";
+    background:url('../img/fundo2.png');
+    background-size:100% 100%;
+    left: 0;
+    top: 0;
+    bottom:0;
+    right: 0;
+    position: absolute;
+    z-index:-1;
+}
+
+.progressbar {
+    background:url('../img/bar.png');
+    width: 20%;
+    height: 5px;
+    margin-top:-6px;
+    float: left;
+    border:hidden;
+    background-size: 100% 100%;
+    transition: width .1s linear;
+}
+
+.player h2 {
+    width: 100%;
+    height: 20px;
+    font-size:10pt;
+    text-align: center;
+    margin-top:10px;
+}
+
+.player h3 {
+    width: 100%;
+    font-size: 7pt;
+    text-align: center;
+    margin-top:3px;
+}
+
+
+
+.player span {
+    margin-top:-40px;
+    font-size:9pt;
+    float: left;
+    margin-left:5px;
+}
+
+.player .mn_sg {
+   float: right;
+   right:0;
+   margin-right:5px;
+}
+
+.player ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    left:50%;
+    margin-left:-160px;
+}
+
+.player ul li  {
+    width: 33.3px;
+    padding: 10px;
+    margin-left:40px;
+}
+
+.player ul li button {
+    background: transparent;
+    border:hidden;
+    
+}
+
+.player ul li button:focus {
+    border:hidden;
+}
+
+.player ul li button img {
+    width: 30px;
+    height: 30px;
+}
+
+.player .loop {
+    margin-top:-5px;
+    position: fixed;
+    right:0;
+}
+
+.upload {
+    
+    float: left;
+    width: 100%;
+}
+
+.upload form {
+    margin-left:15%;
+    margin-top:20%;
+}
+
+.upload #file {
+    display:none;
+}
+
+
+.ipt_up {
+    width: 200px;
+    height: 30px;
+    border:hidden;
+    border-radius:10px;
+    color:white;
+    margin-top:15px;
+    background:url('../img/fundo1.png');
+    background-size:100% 100%; 
+    margin-left:10px;
+}
+
+.ipt_up  a {
+    text-decoration: none;
+    color:white;
+}
